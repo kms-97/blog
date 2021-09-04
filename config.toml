@@ -1,0 +1,42 @@
+baseURL = "https://blog.lulab.net/"
+title = "KMS's blog"
+
+languageCode = "kr-ko"
+theme = "hugo-hello-programmer-theme"
+disqusShortname = "" # 개별설정
+googleAnalytics = "" # 개별설정
+paginate = 7
+
+[author]
+    name = "개별설정"
+    email = "개별설정"
+
+[params]
+    description = "프론트엔드 프로그래머를 목표로 기록하는 블로그입니다."
+    mainSections = ["project", "problem", "likelion", "study"]
+
+[taxonomies]
+    category = 'categories'
+    tag = 'tags'
+
+[related]
+  includeNewer = true
+  threshold = 80
+  toLower = false
+
+  [[related.indices]]
+    name = "tags"
+    weight = 100
+
+  [[related.indices]]
+    name = "categories"
+    weight = 101
+
+  [[related.indices]]
+    name = "date"
+    weight = 10
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

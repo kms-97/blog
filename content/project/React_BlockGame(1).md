@@ -1,5 +1,5 @@
 ---
-title: "React로 블럭 채우기 퍼즐 만들기(1)"
+title: "React로 블럭 채우기 퍼즐 만들기(1) - 시작, 화면 구성"
 date: 2021-09-06T23:50:00+09:00
 categories: ["project"]
 tags: ["React", "javascript", "ToyProject", "Block Puzzle"]

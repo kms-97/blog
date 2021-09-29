@@ -1,6 +1,6 @@
 ---
 title: "Javscript - 자료형"
-date: 2021-09-15T01:40:00+09:00
+date: 2021-09-15T16:00:00+09:00
 categories: ["study"]
 tags: ["javascript"]
 cover: ""

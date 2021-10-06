@@ -38,3 +38,31 @@ console.log('next' in iterator); // true
 console.log(iterator.next()); // {value: 1, done: false}
 console.log(iterator.next()); // {value: 2, done: false}
 ```
+
+### 커스텀 이터레이블
+```js
+// 이터러블이면서 이터레이터인 객체를 반환하는 함수
+const fibonacciFunc = function (max) {
+  let [pre, cur] = [0, 1];
+
+  // Symbol.iterator 메소드와 next 메소드를 소유한
+  // 이터러블이면서 이터레이터인 객체를 반환
+  return {
+    // Symbol.iterator 메소드
+    [Symbol.iterator]() {
+      return this;
+    },
+    // next 메소드는 이터레이터 리절트 객체를 반환
+    next() {
+      [pre, cur] = [cur, pre + cur];
+      return {
+        value: cur,
+        done: cur >= max
+      };
+    }
+  };
+};
+
+// iter는 이터러블이면서 이터레이터이다.
+let iter = fibonacciFunc(10);
+```

@@ -57,3 +57,5 @@ const Async = async (props) => {
 }
 ```
 - await 
+진행 중 `await` 연사자를 만나게 되면, 리턴되는 `Promise`가 `fulfill` 혹은 `reject` 될 때 까지 `async`함수의 실행을 일시 정지한다.<br>
+만일 `await` 연사자 다음에 나오는 문의 값이 `Promise`가 아니라면, 해당 값을 `resolved Promise`로 변환시킨다.

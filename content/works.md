@@ -63,3 +63,31 @@ cover:
 <br>
 - Framework <br>
 <i class="fab fa-react fa-3x" title="create-react-app"></i>
+---
+
+## 블럭 채우기 퍼즐
+### 스크린샷
+![Puzzle1](https://user-images.githubusercontent.com/72490858/136985351-06c31084-3501-490d-97dc-ff79f008132b.gif)
+
+### 소개
+[Github](https://github.com/kms-97/Block-puzzle)<br>
+1인 토이 프로젝트<br>
+React로 구현한 간단한 블럭 채우기 퍼즐
+
+### 기능
+- 게임판 모드(크기) 변경
+- 블럭 생성 및 드래그 앤 드롭을 통한 게임 진행
+- 채워진 줄 삭제 및 점수 증가
+- 진행 불가능 시 게임 오버 모달 표시 및 재시작 기능
+
+### 과정
+- [React로 블럭 채우기 퍼즐 만들기](https://kms-97.github.io/tags/block-puzzle/) 
+
+### 개발 스택
+- Language
+<br>
+<i class="fab fa-css3-alt fa-3x" title="css3"></i>
+<i class="fab fa-js-square fa-3x" title="javascript"></i>
+<br>
+- Framework <br>
+<i class="fab fa-react fa-3x" title="create-react-app"></i>

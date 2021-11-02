@@ -9,7 +9,7 @@ cover: ""
 `REST`란 REpresentational State Transfer의 줄임말로, 서버의 자원을 정의하고 자원에 대한 주소를 지정하는 방법이다. 통신 방식 중 하나로 일종의 약속이며, 구체적으로는 `HTTP URI`를 통해 자원을 명시하고 `HTTP Method`를 통해 해당 자원에 대한 CRUD Operation을 적용하는 것을 의미한다. 즉, 어떤 자원에 대한 CRUD Operation 수행 요청을 URI에 보내는 것.
 
 > URI(Uniform Resource Identifier)  
-> '통합 자원 식별자'. 인터넷 상에서의 각종 정보들의 고유한 식별자이다. URI의 사전에 정의된 규칙에 따라 자원의 위치를 표시한 것을 URI, 이름을 표시한 것을 URN이라고 한다.
+> '통합 자원 식별자'. 인터넷 상에서의 각종 정보들의 고유한 식별자이다. URI의 사전에 정의된 규칙에 따라 자원의 위치를 표시한 것을 URL, 이름을 표시한 것을 URN이라고 한다.
 
 ### 제한 조건 / 특징
 - Client-Server : 일관적인 인터페이스로 클라이언트와 서버의 명확한 분리.

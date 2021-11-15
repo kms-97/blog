@@ -21,7 +21,7 @@ Express 공식 사이트에서는 스스로를 "빠르고 간결한 웹 프레�
 7. Spring / Java
 
 ### 사용 이유
-즉, `Express`는 JavaScript로 작성되어 `Node.js` 런타임 환경에서 구동되는 웹 프레임워크라고 할 수 있다. 그렇다면 왜 많은 프레임워크 중 `Express`가 [점유율 1위](!https://2020.stateofjs.com/ko-KR/technologies/back-end-frameworks/)(2020 사용량 기준)를 차지하고 수 많은 팬을 가질 만큼 인기가 많은걸까?
+즉, `Express`는 JavaScript로 작성되어 `Node.js` 런타임 환경에서 구동되는 웹 프레임워크라고 할 수 있다. 그렇다면 왜 많은 프레임워크 중 `Express`가 [점유율 1위](https://2020.stateofjs.com/ko-KR/technologies/back-end-frameworks/)(2020 사용량 기준)를 차지하고 수 많은 팬을 가질 만큼 인기가 많은걸까?
 
 우선 `Node.js`를 사용함으로써 얻는 장점이 있다. 코드를 직접 작성하며 모든 기능을 구현하는 것은 어려운 일이다. 세상에 무수히 많은 자바스크립트 프로그래머들이 미리 작성해 놓은 코드를 공개하여 누구든 사용할 수 있도록 한 `모듈`을 노드를 통해 받아 사용할 수 있다. 이 외에도 웹 서버 관점에서 노드가 가지는 많은 장점들은 다음과 같다.
  - 자바스크립트로 작성되는 코드로 새로운 언어를 배울 노력을 줄여줌.
@@ -228,7 +228,7 @@ app.use(
     express.urlencoded({ extended: false }),
 );
 ```
-자주 사용되는 미들웨어와 Express 팀에서 유지하는 미들웨어들은 [여기](!https://expressjs.com/ko/resources/middleware.html)서 확인할 수 있다.
+자주 사용되는 미들웨어와 Express 팀에서 유지하는 미들웨어들은 [여기](https://expressjs.com/ko/resources/middleware.html)서 확인할 수 있다.
 
 #### 활용
 
@@ -278,5 +278,5 @@ app.use(
     `app.use`는 애플케이션의 메인 스택에 header, cookie, session 등을 위해 미들웨어를 삽입할 때 사용되며, 다른 `app.METHOD` 이전에 작성되어야 실행되고 그렇지 않을 경우 실행되지 않는다. 작성 순서대로 실행된다.
     `app.all`의 경우 라우터의 개념으로 바라보아야하며, 지정된 `path`의 모든 유형의 `HTTP 요청`에 대해 실행된다. 여러 콜백(핸들러)을 가질 수 있고, `path`가 정확히 일치해야만 실행된다.
 
-    [Difference between app.all('*') and app.use('/') - stack overflow](!https://stackoverflow.com/questions/14125997/difference-between-app-all-and-app-use)
+    [Difference between app.all('*') and app.use('/') - stack overflow](https://stackoverflow.com/questions/14125997/difference-between-app-all-and-app-use)
 

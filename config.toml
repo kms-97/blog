@@ -6,10 +6,11 @@ theme = "hugo-hello-programmer-theme"
 disqusShortname = "" # 개별설정
 googleAnalytics = "" # 개별설정
 paginate = 7
+enableRobotsTXT = true
 
 [author]
-    name = "개별설정"
-    email = "개별설정"
+    name = "Kim Min Su"
+    email = "msg016@naver.com"
 
 [params]
     description = "프론트엔드 프로그래머를 목표로 기록하는 블로그입니다."
@@ -40,3 +41,8 @@ paginate = 7
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+[sitemap]
+  changefreq = 'daily'
+  filename = 'sitemap.xml'
+  priority = 0.5

@@ -4,7 +4,7 @@ title = "KMS's blog"
 languageCode = "kr-ko"
 theme = "hugo-hello-programmer-theme"
 disqusShortname = "" # 개별설정
-googleAnalytics = "" # 개별설정
+googleAnalytics = "G-C103WH36LQ" # 개별설정
 paginate = 7
 enableRobotsTXT = true
 

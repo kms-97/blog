@@ -117,7 +117,37 @@ class Parent {
 
 let bar = new Parent('foo');
 bar.foo = 'bar'; // error
+bar._foo; // 'foo'
+bar._foo = 'bar'; // 'bar'
 ```
-getter만 설정함으로써 초기 생성 시에만 값을 할당할 수 있고, 이후 수정이 불가능한 프로퍼티를 생성할 수 있음.
+자바의 protected 같은 느낌. 선언된 클래스 내부와 자식 클래스에서 접근이 가능하다.<br>
+getter만 설정함으로써 초기 생성 시에만 값을 할당할 수 있고, 이후 수정이 불가능한 프로퍼티를 생성할 수 있음.<br>
+그러나 문법적으로 강제되는 사항이 아니기 때문에 `Class._property`로 접근이 가능하다.<br>
 
 #### private
+```js
+class Parent {
+    #foo
+
+    constructor(foo) {
+        this.#foo = foo;
+    }
+
+    #getfoo() {
+        return this.#foo
+    }
+
+    get foo() {
+        return this.#getfoo()
+    }
+}
+
+let bar = new Parent('foo'); // Object { #foo: "bar" }
+bar.#foo // Uncaught SyntaxError: reference to undeclared private field or method #foo
+bar.#getfoo // Uncaught SyntaxError: reference to undeclared private field or method #getfoo
+bar.foo // 'foo'
+```
+
+#과 같이 선언된 private 메소드와 프로퍼티는 자식 클래스를 포함한 외부에서는 접근할 수 없다.<br>
+protected와 달리 문법적으로 강제되는 점이 편리하며, static과 함께 사용될 수 있다.<br>
+[Private class fields - MDN](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Classes/Private_class_fields)
